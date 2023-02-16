@@ -1,0 +1,1 @@
+const aboutDescription = "I love learning new concepts and building up my developer skillsets. I look forward to learning more in the future."

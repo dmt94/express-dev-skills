@@ -5,4 +5,46 @@ body {
 
 a {
   color: #00B7FF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(49, 63, 182);
+}
+
+.skills-icon {
+  width: 13vmin;
+  background-color: rgb(255, 255, 252);
+  border-radius: 30px;
+  padding: 2vmin;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+li {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+/* VIEW */
+
+.skill-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.edit-skill {
+
+}
+.edit-skill-link {
+  background-color: #c5ee4ba1;
+  display: inline-block;
+  color: rgb(59, 55, 55);
+  padding: 1vmin;
+  border-radius: 15px;
+  font-size: 2vmin;
+}
+.edit-skill-link:hover {
+  background-color: rgb(144, 216, 50);
+  cursor: pointer;
+  color: white;
 }

@@ -1,0 +1,21 @@
+<%- include('../partials/header') %>
+
+<ul>
+  <% skills.forEach(function(skill) { %>
+    <li>
+      <form
+        action="/skills/<%= skill.id %>?_method=DELETE"
+        method="POST"
+        class="delete-form"
+      >
+      <button type="submit">X</button>
+      </form>
+      <a href="/skills/<%= skill.id %>"><%= skill.name %></a>
+      <img class="skills-icon" src="<%= skill.icon %>" alt="">
+    </li>
+  <% }); %>
+</ul>
+<a href="/skills/add">Add More Skills</a>
+
+  
+<%- include('../partials/footer') %>

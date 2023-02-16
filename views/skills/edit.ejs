@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+<form action="/skills/<%= skill.id %>?_method=PUT" method="POST">
+  <label for="name">Name of Skill:</label>
+  <input type="text" name="name" value="<%= skill.name %>">
+
+  <label for="link">Link:</label>
+  <input type="text" name="link" value="<%= skill.link %>">
+
+  <label for="icon">Icon URL:</label>
+  <input type="text" name="icon" value="<%= skill.icon %>">
+
+  <label for="description">About:</label>
+  <textarea id="w3review" name="description" rows="4" cols="50"><%=skill.description%></textarea>
+
+  <button type="submit">Update To-Do</button>
+</form>
+
+<%- include('../partials/footer') %>
