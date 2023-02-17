@@ -1,6 +1,7 @@
 <%- include('../partials/header') %>
 
-<form action="/skills/<%= skill.id %>?_method=PUT" method="POST">
+<h1 class="edit-title">Edit <%= skill.name %></h1>
+<form class="skill-edit-form" action="/skills/<%= skill.id %>?_method=PUT" method="POST">
   <label for="name">Name of Skill:</label>
   <input type="text" name="name" value="<%= skill.name %>">
 
@@ -11,7 +12,7 @@
   <input type="text" name="icon" value="<%= skill.icon %>">
 
   <label for="description">About:</label>
-  <textarea id="w3review" name="description" rows="4" cols="50"><%=skill.description%></textarea>
+  <textarea name="description" rows="4" cols="50"><%=skill.description%></textarea>
 
   <button type="submit">Update To-Do</button>
 </form>

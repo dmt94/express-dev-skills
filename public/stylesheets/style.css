@@ -1,50 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(54, 50, 50);
+  color:rgb(242, 233, 255);
+}
+
+.remove-btn {
+  background-color: rgb(245, 104, 104);
+  border: none;
+  border-radius: 50px;
+  padding: 2px 6px;
+  color: rgb(40, 38, 38);
+  font-weight: 800;
+  position: relative;
+  box-shadow: rgba(39, 39, 48, 0.91) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.remove-btn:hover {
+  cursor: pointer;
+  background-color: rgb(223, 32, 233);
 }
 
 a {
-  color: #00B7FF;
+  color: #f9f8dd;
   text-decoration: none;
+  padding: 2vmin;
+  border: 1px solid #f6f4c2;
+  border-radius: 5px;
 }
 
 a:hover {
-  color: rgb(49, 63, 182);
+  background-color: #deddf92b;
 }
 
 .skills-icon {
-  width: 13vmin;
-  background-color: rgb(255, 255, 252);
-  border-radius: 30px;
-  padding: 2vmin;
+  background-color: #ffffdd53;
+  width: 9vmin;
+  border-radius: 50px;
+  padding: 1vmin;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 25vmin);
 }
 
 li {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: center;
+  align-items: center;
+  justify-content:space-between;
+  margin: 4vmin;
+  background-color: rgba(75, 75, 85, 0.661);
+  height: 20vmin;
+  border-radius: 12px;
+}
+
+/* ABOUT ME */
+
+#about-me-area p,
+.skill-descr,
+.more-link {
+  margin-bottom: 17vmin;
 }
 
 /* VIEW */
 
-.skill-title {
+.edit-skill,
+.edit-title,
+#about-me-area {
+  margin-top: 17vmin;
+}
+
+.skill-title,
+.edit-title,
+.skill-title-link {
   text-transform: uppercase;
   letter-spacing: 2px;
+  border: none;
+  max-width: fit-content;
 }
-.edit-skill {
 
+.skill-title-link:hover {
+  background-color: rgba(255, 0, 0, 0);
+  color: rgb(247, 255, 98);
 }
-.edit-skill-link {
-  background-color: #c5ee4ba1;
+
+.edit-skill-link, 
+button {
+  background-color: #f7ffdef4;
   display: inline-block;
   color: rgb(59, 55, 55);
   padding: 1vmin;
-  border-radius: 15px;
+  border-radius: 2px;
   font-size: 2vmin;
+  border: none;
 }
-.edit-skill-link:hover {
-  background-color: rgb(144, 216, 50);
+.edit-skill-link:hover, 
+button:hover {
+  background-color: rgb(106, 106, 255);
   cursor: pointer;
-  color: white;
+  color: rgb(255, 236, 236);
 }
+
+/* EDIT FORM */
+.title {
+  margin-top: 10vmin;
+}
+
+.skill-edit-form,
+.about-form {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vmin;
+}
+
+.skill-edit-form label,
+.skill-edit-form button
+.about-form label {
+  font-size: 3vmin;
+}
+
+.skill-edit-form input,
+.about-form input,
+textarea {
+  font-size: 3vmin;
+  margin: 2vmin 0;
+  border-radius: 8px;
+  border: none;
+  padding: 2vmin;
+  font-size: 3vmin;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+textarea {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; 
+}
+

@@ -1,11 +1,11 @@
 <%- include('../partials/header') %>
 
-<h1 class="skill-title"><%= skill.name %></h1>
-<img class="skills-icon" src="<%= skill.icon %>" alt="icon">
-<p><%=skill.description%></p>
-<a href="<%= skill.link %>"> More About: <%= skill.name.toUpperCase() %> </a>
 <div class="edit-skill">
   <a class="edit-skill-link" href="/skills/<%= skill.id %>/edit">Edit Skill</a>
 </div>
+<h1 class="skill-title"><%= skill.name %></h1>
+<img class="skills-icon" src="<%= skill.icon %>" alt="icon">
+<p class="skill-descr"><%=skill.description%></p>
+<a class="more-link" href="<%= skill.link %>"> More About: <%= skill.name.toUpperCase() %> </a>
 
 <%- include('../partials/footer') %>

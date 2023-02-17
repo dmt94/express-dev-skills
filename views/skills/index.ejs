@@ -8,9 +8,9 @@
         method="POST"
         class="delete-form"
       >
-      <button type="submit">X</button>
+      <button class="remove-btn" type="submit">X</button>
       </form>
-      <a href="/skills/<%= skill.id %>"><%= skill.name %></a>
+      <a class="skill-title-link" href="/skills/<%= skill.id %>"><%= skill.name %></a>
       <img class="skills-icon" src="<%= skill.icon %>" alt="">
     </li>
   <% }); %>
