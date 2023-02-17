@@ -4,7 +4,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(54, 50, 50);
+  background-color: rgb(37, 36, 36);
   color:rgb(242, 233, 255);
 }
 
@@ -16,11 +16,11 @@ body {
   color: rgb(40, 38, 38);
   font-weight: 800;
   position: relative;
-  box-shadow: rgba(39, 39, 48, 0.91) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(224, 224, 255, 0.91) 0px 50px 100px -20px, rgba(239, 200, 200, 0.616) 0px 30px 60px -30px;
 }
 .remove-btn:hover {
   cursor: pointer;
-  background-color: rgb(223, 32, 233);
+  background-color: rgb(206, 8, 8);
 }
 
 a {
@@ -57,6 +57,19 @@ li {
   background-color: rgba(75, 75, 85, 0.661);
   height: 20vmin;
   border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+li:hover img {
+  background-color: #fffffe;
+  transform: scale(1.2);
+  transition: all ease-in-out 500ms;
+  box-shadow: rgba(255, 255, 255, 0.812) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+li:hover {
+  transition: all ease-in-out 500ms;
+  border: 2px solid white;
 }
 
 /* ABOUT ME */
