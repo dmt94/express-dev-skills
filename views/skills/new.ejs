@@ -1,0 +1,21 @@
+<%- include('../partials/header') %>
+
+<form action="/skills" method="POST">
+  <label for="name">Name of Skill:</label>
+  <input type="text" name="name" value="">
+
+  <label for="link">Link:</label>
+  <input type="text" name="link" value="">
+
+  <label for="icon">Icon URL:</label>
+  <input type="text" name="icon" value="">
+
+  <label for="description">About:</label>
+  <textarea id="w3review" name="description" rows="4" cols="50"></textarea>
+
+  <button type="submit">Add Skill</button>
+
+  
+</form>
+
+<%- include('../partials/footer') %>

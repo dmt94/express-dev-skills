@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
+var aboutCntrl = require("../controllers/about");
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'My Skills' });
-});
+router.get('/', aboutCntrl.aboutDescription);
+router.get('/editAbout', aboutCntrl.edit);
+router.put('/', aboutCntrl.update);
 
 module.exports = router;
